@@ -1,0 +1,31 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="myproject.myapp2.management.commands.create_user.myapp2" />
+          <option value="myproject.myapp2.management.commands.get_all_users.myapp2" />
+          <option value="myproject.myapp2.management.commands.get_user.myapp2" />
+          <option value="myproject.myapp2.management.commands.update_user.myapp2" />
+          <option value="myproject.myapp2.management.commands.delete_user.myapp2" />
+          <option value="Basic.seminar2.views.seminar2" />
+          <option value="Basic.sem2_task2app.views.sem2_task2app" />
+          <option value="Basic.sem2_task2app.management.commands.author_create.sem2_task2app" />
+          <option value="Basic.hw2.views.hw2" />
+          <option value="Basic.hw2.management.commands.add_client.hw2" />
+          <option value="Basic.hw2.management.commands.add_product.hw2" />
+          <option value="Basic.hw2.management.commands.add_order.hw2" />
+          <option value="Basic.hw2.management.commands.del_client.hw2" />
+          <option value="Basic.hw2.management.commands.del_order.hw2" />
+          <option value="Basic.hw2.management.commands.del_product.hw2" />
+          <option value="Basic.hw4.forms.hw2" />
+          <option value="Basic.hw4.views.hw2" />
+          <option value="Basic.hw5.admin.hw2" />
+          <option value="myproject.myapp6.management.commands.make_products.myapp5" />
+          <option value="myproject.myapp6.views.myapp5" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
