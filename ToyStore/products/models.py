@@ -30,4 +30,13 @@ class Products(models.Model):
         verbose_name_plural = 'Продукты'
 
     def __str__(self):
-        return self.name
+        return f'{self.name} Кол-во - {self.quantity}'
+
+    # метод для кастомного id
+    def display_id(self):
+        return f'{self.id:04}'
+
+    def selling_price(self):
+        if self.discount:
+            return round(self.price - self.price * self.discount / 100, 2)
+        return self.price
