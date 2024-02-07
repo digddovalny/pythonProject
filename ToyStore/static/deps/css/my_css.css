@@ -11,8 +11,12 @@ body {
   content: none;
 }
 
+.custom-border {
+    border: 1px solid #343a40;
+}
+
 .custom-shadow {
-  box-shadow: 5px 5px 25px 19px #000000;
+  box-shadow: 1px 1px 1px 1px #000000;
 }
 
 .product_id {
