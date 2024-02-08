@@ -29,13 +29,13 @@ class UserRegistrationForm(UserCreationForm):
     last_name = forms.CharField()
     username = forms.CharField()
     email = forms.CharField()
-    passwrod1 = forms.CharField()
-    passwrod2 = forms.CharField()
+    password1 = forms.CharField()
+    password2 = forms.CharField()
 
 
 class ProfileForm(UserChangeForm):
     class Meta:
-        model = models.User
+        model = User
         fields = (
             'image',
             'first_name',
@@ -43,3 +43,9 @@ class ProfileForm(UserChangeForm):
             'username',
             'email',
         )
+
+    image = forms.ImageField(required=False)
+    first_name = forms.CharField()
+    last_name = forms.CharField()
+    username = forms.CharField()
+    email = forms.CharField()
