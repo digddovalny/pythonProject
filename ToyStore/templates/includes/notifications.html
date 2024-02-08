@@ -20,14 +20,14 @@
             {% for message in messages %}
             {% if message.tags == 'success' %}
             <div id="notification"
-                 class="position-fixed start-50 translate-middle-x z-3 alert alert-success fade show custom-shadow"
+                 class="position-fixed start-50 translate-middle-x z-3 alert alert-success fade show custom-border"
                  role="alert">
                 {{ message }}
             </div>
             {% endif %}
             {% if message.tags == 'warning' %}
             <div id="notification"
-                 class="position-fixed start-50 translate-middle-x z-3 alert alert-danger fade show custom-shadow"
+                 class="position-fixed start-50 translate-middle-x z-3 alert alert-danger fade show custom-border"
                  role="alert">
                 {{ message }}
             </div>
@@ -35,7 +35,7 @@
             {% endfor %}
             {% else %}
             <div id="jq-notification"
-                 class="position-fixed start-50 translate-middle-x z-3 alert alert-success fade show custom-shadow"
+                 class="position-fixed start-50 translate-middle-x z-3 alert alert-success fade show custom-border"
                  style="display: none;" role="alert">
             </div>
             {% endif %}

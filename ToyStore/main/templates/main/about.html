@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="{% static 'deps/css/my_footer_css.css' %}">
 {% endblock %}
 
+{% block modal_basket %}
+{% include "includes/basket_button.html" %}
+{% endblock %}
+
 {% block content %}
     <h2 class="mt-5 pt-5"><strong>{{ content }}</strong></h2>
     <p>{{ text_on_page }}</p>

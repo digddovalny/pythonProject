@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load baskets_tags %}
 
 {% block content %}
 <div class="row">
@@ -84,11 +85,13 @@
                 </div>
             </div>
             <!-- Корзина -->
+            {% user_baskets request as baskets %}
             <div class="col-md-7">
                 <div class=" bg-white p-4 mb-4 mx-2 rounded custom-border">
                     <h3 class="text-center mb-4">Корзина</h3>
                     <div class="container" id="cart-items-container">
                         <!-- Разметка корзины -->
+                        {% include 'baskets/includes/included_basket.html' %}
                         <!-- Закончилась разметка корзины -->
                     </div>
                     <a class="btn btn-dark" href="../orders/create_order.html">
