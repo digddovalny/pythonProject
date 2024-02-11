@@ -10,20 +10,24 @@
             <div class="row text-center">
                 <div class="col p-0">
                     <div class="input-group">
-                                                            <span class="input-group-btn">
-                                                                <button type="button"
-                                                                        class="btn btn-dark btn-sm decrement"
-                                                                        data-cart-id=""
-                                                                        data-cart-change-url="">-</button>
-                                                            </span>
+                        <span class="input-group-btn">
+                            <button type="button"
+                                    class="btn btn-dark btn-sm decrement"
+                                    data-basket-id="{{ basket.id }}"
+                                    data-basket-change-url="{% url 'basket:basket_change' %}">
+                                {% csrf_token %}
+                                -</button>
+                        </span>
                         <input type="text" class="form-control number" value="{{ basket.quantity }}"
                                readonly>
                         <span class="input-group-btn">
-                                                                <button type="button"
-                                                                        class="btn btn-dark btn-sm increment"
-                                                                        data-cart-id=""
-                                                                        data-cart-change-url="">+</button>
-                                                            </span>
+                            <button type="button"
+                                    class="btn btn-dark btn-sm increment"
+                                    data-basket-id="{{ basket.id }}"
+                                    data-basket-change-url="{% url 'basket:basket_change' %}">
+                                {% csrf_token %}
+                                +</button>
+                        </span>
                     </div>
                 </div>
                 <div class="col p-0">
@@ -31,7 +35,9 @@
                 </div>
                 <div class="col p-0"><strong> {{ basket.product_price }} руб.</strong></div>
                 <div class="col p-0">
-                    <a href="{% url 'basket:basket_remove' 1 %}" class="remove-from-cart" data-cart-id="">
+                    <a href="{% url 'basket:basket_remove' %}" class="remove-from-basket"
+                       data-basket-id="{{ basket.id }}">
+                        {% csrf_token %}
                         <img class="mx-1" src="{% static 'deps/icons/trash3-fill.svg' %}"
                              alt="Catalog Icon" width="16" height="16">
                     </a>
