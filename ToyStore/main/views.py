@@ -6,7 +6,7 @@ from products.models import Categories
 
 def index(request):
     context = {
-        'title': 'Home - Главная',
+        'title': 'Главная',
         'content': 'Магазин игрушек ToyVip',
     }
     return render(request, 'main/index.html', context)
@@ -14,7 +14,7 @@ def index(request):
 
 def about(request):
     context = {
-        'title': 'Home - О нас',
+        'title': 'О нас',
         'content': 'О нас',
         'text_on_page': 'Добро пожаловать в мир волшебства и веселья - добро пожаловать в мой интернет-магазин ToyVip! '
                         'Данный интернет-магазин был выбран в качестве дипломного проекта GeekBrains. '
