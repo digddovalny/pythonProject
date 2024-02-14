@@ -27,3 +27,6 @@ python manage.py migrate
  python manage.py runserver --settings=settings.local
  ```
 5. Перейдите по ссылке: (http://127.0.0.1:8000)
+
+## Тестовый суперпользователь
+lodin:igor password:igor
