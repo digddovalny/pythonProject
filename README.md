@@ -29,4 +29,4 @@ python manage.py migrate
 5. Перейдите по ссылке: (http://127.0.0.1:8000)
 
 ## Тестовый суперпользователь
-lodin:igor password:igor
+### login:igor password:igor
