@@ -14,13 +14,13 @@ python manage.py migrate
 ```
  3. Загрузите тестовые данные в базу:
  ```sh
- python manage.py loaddata fixtures.json
+ python manage.py loaddata fixtures/categoreies/category.json
  ```
  ```sh
- python manage.py loaddata category.json
+ python manage.py loaddata fixtures/products/product.json
  ```
  ```sh
- python manage.py loaddata user.json
+ python manage.py loaddata fixtures/users/user.json
  ```
  4. Запустите тестовый сервер:
   ```sh
