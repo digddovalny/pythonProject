@@ -24,7 +24,7 @@ python manage.py migrate
  ```
  4. Запустите тестовый сервер:
   ```sh
- python manage.py runserver --settings=settings.local
+ python manage.py runserver
  ```
 5. Перейдите по ссылке: (http://127.0.0.1:8000)
 
